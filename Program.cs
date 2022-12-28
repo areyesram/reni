@@ -5,7 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 
-namespace reni
+namespace Aryes
 {
     internal static class Program
     {
@@ -38,7 +38,7 @@ namespace reni
                         date = DateTime.MinValue;
                         foreach (var p in img.PropertyItems)
                         {
-                            if (p.Id != 36867) continue;
+                            if (p.Id != Exif.PropertyTag.ExifDTOrig) continue;
                             var s = Encoding.ASCII.GetString(p.Value);
                             if (!DateTime.TryParseExact(s, "yyyy:MM:dd HH:mm:ss\0", null, DateTimeStyles.AssumeLocal, out date))
                             {

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B0994360-2CBA-4465-9BEA-06F0810E262D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>reni</RootNamespace>
+    <RootNamespace>Aryes</RootNamespace>
     <AssemblyName>reni</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exif.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
